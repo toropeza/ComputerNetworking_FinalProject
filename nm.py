@@ -61,6 +61,7 @@ if __name__ == '__main__':
             untrack(mac)
         elif action == "exit":
             running = False
+            thread.join()
         else:
             print("Invalid command")
             usage()
